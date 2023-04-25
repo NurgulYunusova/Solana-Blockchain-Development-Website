@@ -1,0 +1,13 @@
+@mixin button($border: 1px solid #000) {
+  background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
+  border: $border;
+  border-radius: 36px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+}

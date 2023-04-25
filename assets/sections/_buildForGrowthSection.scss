@@ -1,0 +1,90 @@
+.buildForGrowthSection {
+  width: 100%;
+  font-family: $base-font;
+  background-color: #000;
+
+  .container {
+    width: 73%;
+    margin: 0 auto;
+
+    .topSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px 0;
+
+      h2 {
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 46px;
+        letter-spacing: 1px;
+        color: #fff;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 25px;
+
+        button {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 27px;
+          text-align: center;
+          color: #ffffff;
+          border: 0;
+          background: transparent;
+          padding: 6px 10px;
+        }
+
+        .active {
+          border: 1px solid #a962ff;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    .middleSection {
+      .card {
+        display: flex;
+
+        .rightOfCard {
+          background: #1a1a1a;
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 50px;
+
+          img {
+            width: 40%;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 27px;
+            color: #ffffff;
+            margin: 10px 0 15px;
+          }
+
+          a {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #a962ff;
+          }
+        }
+      }
+    }
+
+    .bottomSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      padding: 10px 0;
+      background: rgba(38, 31, 38, 0.3);
+      border-radius: 16px;
+    }
+  }
+}

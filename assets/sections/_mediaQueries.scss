@@ -1,0 +1,141 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    header {
+      .container {
+        width: 80%;
+
+        .leftSection {
+          img {
+            width: 150px;
+          }
+        }
+        .rightSection {
+          // .menuButton {
+          //   display: inline-block;
+          // }
+
+          nav ul li a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .mainPageSection {
+      .container {
+        width: 80%;
+        margin: 70px auto;
+
+        h1 {
+          font-size: 48px;
+        }
+
+        p {
+          font-size: 18px;
+          padding: 0 50px;
+        }
+      }
+    }
+
+    .companiesSection {
+      .container {
+        width: 80%;
+
+        ul {
+          width: 100%;
+          gap: 20px;
+          flex-wrap: wrap;
+
+          li img {
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .joinCommunitySection {
+      .container {
+        width: 80%;
+
+        .leftSection h3 {
+          font-size: 32px;
+          width: 75%;
+        }
+
+        .rightSection {
+          gap: 20px;
+
+          .num1 {
+            h2 {
+              font-size: 70px;
+              line-height: 100px;
+            }
+          }
+
+          .num2 {
+            h2 {
+              font-size: 70px;
+              line-height: 100px;
+            }
+          }
+
+          .num3 {
+            h2 {
+              font-size: 70px;
+              line-height: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    .massAdoptionSection {
+      .container {
+        width: 80%;
+        padding: 40px 0;
+        flex-direction: column;
+
+        .leftSection {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            font-size: 30px;
+          }
+        }
+
+        .rightSection {
+          gap: 50px;
+          flex-direction: column;
+
+          .firstTwoCard {
+            margin-top: 80px;
+          }
+
+          .twoCards {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+
+    .buildForGrowthSection {
+      .container {
+        width: 80%;
+
+        .topSection {
+          margin: 20px 0;
+
+          h2 {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+}

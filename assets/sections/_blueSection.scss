@@ -1,0 +1,21 @@
+.blueSection {
+  width: 100%;
+  font-family: $base-font;
+  background: linear-gradient(
+    260.33deg,
+    $linear-gradient1 -13.37%,
+    $linear-gradient2 109.53%
+  );
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 8px 0;
+
+    p {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+}

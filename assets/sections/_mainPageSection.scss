@@ -1,0 +1,67 @@
+body {
+  background-color: #000;
+
+  .mainPageSection {
+    width: 100%;
+    font-family: $base-font;
+    position: relative;
+    height: 400px;
+
+    img {
+      position: absolute;
+      top: -100px;
+      z-index: -1;
+    }
+
+    .bgImg1 {
+      left: 0;
+      width: 33%;
+    }
+
+    .bgImg2 {
+      right: 0;
+      width: 30%;
+    }
+
+    .container {
+      width: 60%;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-weight: 400;
+        font-size: 70px;
+        letter-spacing: 0.68px;
+        text-align: center;
+        color: #fff;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;
+        text-align: center;
+        color: #ffffff;
+        margin: 30px 0;
+        padding: 0 170px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 20px;
+
+        .startBuildingBtn {
+          @include button();
+        }
+
+        .readDocsBtn {
+          @include button($border: 1px solid #fff);
+          background: transparent;
+        }
+      }
+    }
+  }
+}

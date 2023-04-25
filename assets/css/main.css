@@ -1,0 +1,572 @@
+.blueSection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(260.33deg, #0047ff -13.37%, #00bcd4 109.53%);
+}
+.blueSection .container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 8px 0;
+}
+.blueSection .container p {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+}
+header .container {
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .rightSection nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .container .rightSection nav ul li a {
+  color: #848895;
+}
+
+body {
+  background-color: #000;
+}
+body .mainPageSection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  height: 400px;
+}
+body .mainPageSection img {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
+body .mainPageSection .bgImg1 {
+  left: 0;
+  width: 33%;
+}
+body .mainPageSection .bgImg2 {
+  right: 0;
+  width: 30%;
+}
+body .mainPageSection .container {
+  width: 60%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .mainPageSection .container h1 {
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 0.68px;
+  text-align: center;
+  color: #fff;
+}
+body .mainPageSection .container p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px 0;
+  padding: 0 170px;
+}
+body .mainPageSection .container .buttons {
+  display: flex;
+  gap: 20px;
+}
+body .mainPageSection .container .buttons .startBuildingBtn {
+  background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
+  border: 1px solid #000;
+  border-radius: 36px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+body .mainPageSection .container .buttons .readDocsBtn {
+  background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
+  border: 1px solid #fff;
+  border-radius: 36px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.companiesSection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #000000;
+}
+.companiesSection .container {
+  width: 70%;
+  margin: 30px auto;
+}
+.companiesSection .container p {
+  color: #618adc;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+.companiesSection .container ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinCommunitySection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+.joinCommunitySection img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.joinCommunitySection .container {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+}
+.joinCommunitySection .container .leftSection h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  width: 65%;
+  margin-top: 80px;
+}
+.joinCommunitySection .container .rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.joinCommunitySection .container .rightSection .numbers p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #c4c4c4;
+}
+.joinCommunitySection .container .rightSection .num1 h2 {
+  font-weight: 400;
+  font-size: 101px;
+  line-height: 132px;
+  background: linear-gradient(261.81deg, #19fb9b -8.01%, #8c01fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.joinCommunitySection .container .rightSection .num2 h2 {
+  font-weight: 400;
+  font-size: 106px;
+  line-height: 132px;
+  background: linear-gradient(260.33deg, #0047ff -13.37%, #00bcd4 109.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.joinCommunitySection .container .rightSection .num3 h2 {
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 132px;
+  background: linear-gradient(265.11deg, #00ffbd -5.84%, #025b8c 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.massAdoptionSection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+.massAdoptionSection .container {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0;
+}
+.massAdoptionSection .container .leftSection h3 {
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.massAdoptionSection .container .leftSection p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #c4c4c4;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.massAdoptionSection .container .rightSection {
+  display: flex;
+  gap: 80px;
+}
+.massAdoptionSection .container .rightSection .firstTwoCard {
+  margin-top: 120px;
+}
+.massAdoptionSection .container .rightSection .twoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.massAdoptionSection .container .rightSection .twoCards .card {
+  width: 340px;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .cardFirstHeading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #fff;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .fast {
+  border-left: 3px solid #1fcff1;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .scalable {
+  border-left: 3px solid #9945ff;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .decentralized {
+  border-left: 3px solid #ffd512;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .energy {
+  border-left: 3px solid #19fb9b;
+}
+.massAdoptionSection .container .rightSection .twoCards .card p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #c4c4c4;
+}
+.massAdoptionSection .container .rightSection .twoCards .card p a {
+  color: #19fb9b;
+  text-decoration: underline;
+}
+.massAdoptionSection .container .rightSection .twoCards .card .number {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin: 20px 0 10px;
+}
+
+.buildForGrowthSection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #000;
+}
+.buildForGrowthSection .container {
+  width: 73%;
+  margin: 0 auto;
+}
+.buildForGrowthSection .container .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.buildForGrowthSection .container .topSection h2 {
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.buildForGrowthSection .container .topSection .buttons {
+  display: flex;
+  gap: 25px;
+}
+.buildForGrowthSection .container .topSection .buttons button {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  background: transparent;
+  padding: 6px 10px;
+}
+.buildForGrowthSection .container .topSection .buttons .active {
+  border: 1px solid #a962ff;
+  border-radius: 15px;
+}
+.buildForGrowthSection .container .middleSection .card {
+  display: flex;
+}
+.buildForGrowthSection .container .middleSection .card .rightOfCard {
+  background: #1a1a1a;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+.buildForGrowthSection .container .middleSection .card .rightOfCard img {
+  width: 40%;
+}
+.buildForGrowthSection .container .middleSection .card .rightOfCard p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 10px 0 15px;
+}
+.buildForGrowthSection .container .middleSection .card .rightOfCard a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #a962ff;
+}
+.buildForGrowthSection .container .bottomSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 10px 0;
+  background: rgba(38, 31, 38, 0.3);
+  border-radius: 16px;
+}
+
+.joinThrivingCommunitySection {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+.joinThrivingCommunitySection .container {
+  width: 73%;
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.joinThrivingCommunitySection .container h2 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.joinThrivingCommunitySection .container p {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 30px auto;
+  text-align: center;
+}
+.joinThrivingCommunitySection .container button {
+  background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
+  border: 1px solid #000;
+  border-radius: 36px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #000;
+}
+footer .container {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+footer .container .leftSection img {
+  margin-bottom: 20px;
+}
+footer .container .leftSection h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+}
+footer .container .leftSection .socialMediaIcons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 20px;
+}
+footer .container .leftSection p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #848895;
+}
+footer .container .rightSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+footer .container .rightSection div h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+footer .container .rightSection div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .rightSection div ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #848895;
+}
+footer .container .rightSection .globus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+footer .container .rightSection .globus p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #848895;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body header .container {
+    width: 80%;
+  }
+  body header .container .leftSection img {
+    width: 150px;
+  }
+  body header .container .rightSection nav ul li a {
+    font-size: 14px;
+  }
+  body .mainPageSection .container {
+    width: 80%;
+    margin: 70px auto;
+  }
+  body .mainPageSection .container h1 {
+    font-size: 48px;
+  }
+  body .mainPageSection .container p {
+    font-size: 18px;
+    padding: 0 50px;
+  }
+  body .companiesSection .container {
+    width: 80%;
+  }
+  body .companiesSection .container ul {
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  body .companiesSection .container ul li img {
+    width: 120px;
+  }
+  body .joinCommunitySection .container {
+    width: 80%;
+  }
+  body .joinCommunitySection .container .leftSection h3 {
+    font-size: 32px;
+    width: 75%;
+  }
+  body .joinCommunitySection .container .rightSection {
+    gap: 20px;
+  }
+  body .joinCommunitySection .container .rightSection .num1 h2 {
+    font-size: 70px;
+    line-height: 100px;
+  }
+  body .joinCommunitySection .container .rightSection .num2 h2 {
+    font-size: 70px;
+    line-height: 100px;
+  }
+  body .joinCommunitySection .container .rightSection .num3 h2 {
+    font-size: 70px;
+    line-height: 100px;
+  }
+  body .massAdoptionSection .container {
+    width: 80%;
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  body .massAdoptionSection .container .leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .massAdoptionSection .container .leftSection h3 {
+    font-size: 30px;
+  }
+  body .massAdoptionSection .container .rightSection {
+    gap: 50px;
+    flex-direction: column;
+  }
+  body .massAdoptionSection .container .rightSection .firstTwoCard {
+    margin-top: 80px;
+  }
+  body .massAdoptionSection .container .rightSection .twoCards {
+    flex-direction: row;
+  }
+  body .buildForGrowthSection .container {
+    width: 80%;
+  }
+  body .buildForGrowthSection .container .topSection {
+    margin: 20px 0;
+  }
+  body .buildForGrowthSection .container .topSection h2 {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */

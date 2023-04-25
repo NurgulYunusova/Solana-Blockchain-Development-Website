@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./assets/base/reset.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Solana Blockchain Development Website</title>
   </head>
   <body>
@@ -17,100 +22,114 @@
 
     <!-- ----- HEADER ----- -->
     <header>
-      <div class="leftSection">
-        <img
-          src="./images/solanaLogo.svg"
-          alt="Solana Logo"
-          class="solanaLogo"
-        />
-      </div>
+      <div class="container">
+        <div class="leftSection">
+          <img
+            src="assets/images/solanaLogo.svg"
+            alt="Solana Logo"
+            class="solanaLogo"
+          />
+        </div>
 
-      <div class="rightSection">
-        <nav>
-          <ul>
-            <li>
-              <a href="#"
-                >Learn
-                <svg
-                  width="15"
-                  height="9"
-                  viewBox="0 0 15 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
-                    fill="#848895"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/build.html"
-                >Build
-                <svg
-                  width="15"
-                  height="9"
-                  viewBox="0 0 15 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
-                    fill="#848895"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                >Network
-                <svg
-                  width="15"
-                  height="9"
-                  viewBox="0 0 15 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
-                    fill="#848895"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                >Community
-                <svg
-                  width="15"
-                  height="9"
-                  viewBox="0 0 15 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
-                    fill="#848895"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="rightSection">
+          <!-- <span><i class="fa-solid fa-bars menuButton"></i></span> -->
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#"
+                  >Learn
+                  <svg
+                    width="15"
+                    height="9"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
+                      fill="#848895"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/build.html"
+                  >Build
+                  <svg
+                    width="15"
+                    height="9"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
+                      fill="#848895"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  >Network
+                  <svg
+                    width="15"
+                    height="9"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
+                      fill="#848895"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  >Community
+                  <svg
+                    width="15"
+                    height="9"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.2931 1.293C12.3853 1.19749 12.4957 1.12131 12.6177 1.0689C12.7397 1.01649 12.8709 0.988903 13.0037 0.98775C13.1365 0.986596 13.2681 1.0119 13.391 1.06218C13.5139 1.11246 13.6256 1.18671 13.7195 1.28061C13.8134 1.3745 13.8876 1.48615 13.9379 1.60905C13.9882 1.73194 14.0135 1.86362 14.0123 1.9964C14.0112 2.12918 13.9836 2.2604 13.9312 2.3824C13.8788 2.50441 13.8026 2.61475 13.7071 2.707L7.70707 8.707C7.52484 8.88926 7.27927 8.99412 7.0216 8.99971C6.76392 9.0053 6.51404 8.91119 6.32407 8.737L0.324072 3.237C0.128608 3.05771 0.0123704 2.80812 0.000930667 2.54313C-0.00473371 2.41192 0.0155007 2.28088 0.060479 2.1575C0.105457 2.03411 0.174299 1.92078 0.263072 1.824C0.351846 1.72722 0.458813 1.64886 0.577867 1.59342C0.696921 1.53798 0.825729 1.50652 0.956939 1.50086C1.22193 1.48942 1.48061 1.58371 1.67607 1.763L6.97007 6.616L12.2931 1.293Z"
+                      fill="#848895"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <!-- ----- MAIN PAGE SECTION ----- -->
     <section class="mainPageSection">
+      <img
+        src="./assets/images/mainPage1.svg"
+        alt="Background image"
+        class="bgImg1"
+      />
+      <img
+        src="./assets/images/mainPage2.svg"
+        alt="Background image"
+        class="bgImg2"
+      />
       <div class="container">
         <h1>Powerful for developers.</h1>
         <h1>Fast for everyone.</h1>
@@ -119,8 +138,8 @@
           users, new consumers, and everyone in between.
         </p>
         <div class="buttons">
-          <button type="button">START BUILDING</button>
-          <button type="button">READ DOCS</button>
+          <button type="button" class="startBuildingBtn">START BUILDING</button>
+          <button type="button" class="readDocsBtn">READ DOCS</button>
         </div>
       </div>
     </section>
@@ -133,25 +152,28 @@
         </p>
         <ul>
           <li>
-            <img src="./images/brave.svg" alt="Brave Company" />
+            <img src="assets/images/brave.svg" alt="Brave Company" />
           </li>
           <li>
-            <img src="./images/circle.svg" alt="Circle Company" />
+            <img src="assets/images/circle.svg" alt="Circle Company" />
           </li>
           <li>
-            <img src="./images/discord.svg" alt="Discord Company" />
+            <img src="assets/images/discord.svg" alt="Discord Company" />
           </li>
           <li>
-            <img src="./images/google.svg" alt="Google Company" />
+            <img src="assets/images/google.svg" alt="Google Company" />
           </li>
           <li>
-            <img src="./images/jump.svg" alt="Jump Company" />
+            <img src="assets/images/jump.svg" alt="Jump Company" />
           </li>
           <li>
-            <img src="./images/lollapalooza.svg" alt="Lollapalooza Company" />
+            <img
+              src="assets/images/lollapalooza.svg"
+              alt="Lollapalooza Company"
+            />
           </li>
           <li>
-            <img src="./images/magiceden.svg" alt="Magic Eden Company" />
+            <img src="assets/images/magiceden.svg" alt="Magic Eden Company" />
           </li>
         </ul>
       </div>
@@ -159,20 +181,21 @@
 
     <!-- ----- JOIN COMMUNITY SECTION ----- -->
     <section class="joinCommunitySection">
+      <img src="./assets/images/communityBg.svg" alt="" />
       <div class="container">
         <div class="leftSection">
           <h3>Join a community of millions.</h3>
         </div>
         <div class="rightSection">
-          <div class="numbers">
+          <div class="numbers num1">
             <h2>11.5M+</h2>
             <p>ACTIVE ACCOUNTS</p>
           </div>
-          <div class="numbers">
+          <div class="numbers num2">
             <h2>21.9M</h2>
             <p>NFTS MINTED</p>
           </div>
-          <div class="numbers">
+          <div class="numbers num3">
             <h2>$0.00025</h2>
             <p>AVERAGE COST PER TRANSACTION</p>
           </div>
@@ -181,7 +204,7 @@
     </section>
 
     <!-- ----- MASS ADOPTION SECTION ----- -->
-    <section class="masssAdoptionSecton">
+    <section class="massAdoptionSection">
       <div class="container">
         <div class="leftSection">
           <h3>Made for mass adoption.</h3>
@@ -203,14 +226,14 @@
         </div>
 
         <div class="rightSection">
-          <div class="twoCards">
+          <div class="twoCards firstTwoCard">
             <div class="card">
-              <h3>Fast</h3>
+              <h3 class="cardFirstHeading fast">Fast</h3>
               <p>
                 Don’t keep your users waiting. Solana has block times of 400
                 milliseconds — and as hardware gets faster, so will the network.
               </p>
-              <h3>
+              <h3 class="number">
                 <svg
                   width="5"
                   height="5"
@@ -228,13 +251,13 @@
               <p>TRANSACTIONS PER SECOND</p>
             </div>
             <div class="card">
-              <h3>Scalable</h3>
+              <h3 class="cardFirstHeading scalable">Scalable</h3>
               <p>
                 Get big, quick. Solana is made to handle thousands of
                 transactions per second, and fees for both developers and users
                 remain less than $0.01.
               </p>
-              <h3>
+              <h3 class="number">
                 <svg
                   width="5"
                   height="5"
@@ -254,13 +277,13 @@
           </div>
           <div class="twoCards">
             <div class="card">
-              <h3>Decentralized</h3>
+              <h3 class="cardFirstHeading decentralized">Decentralized</h3>
               <p>
                 The Solana network is validated by thousands of nodes that
                 operate independently of each other, ensuring your data remains
                 secure and censorship resistant.
               </p>
-              <h3>
+              <h3 class="number">
                 <svg
                   width="5"
                   height="5"
@@ -278,18 +301,117 @@
               <p>VALIDATOR NODES</p>
             </div>
             <div class="card">
-              <h3>Energy Efficient</h3>
+              <h3 class="cardFirstHeading energy">Energy Efficient</h3>
               <p>
                 Solana’s proof of stake network and other innovations minimize
-                its impact on the environment. Each Solana transaction uses
-                about the same energy as a few Google searches.
+                its impact on the <a href="#">environment.</a> Each Solana
+                transaction uses about the same energy as a few Google searches.
               </p>
-              <h3>0%</h3>
+              <h3 class="number">0%</h3>
               <p>NET CARBON IMPACT</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ----- BUILD FOR GROWTH SECTION ----- -->
+    <section class="buildForGrowthSection">
+      <div class="container">
+        <div class="topSection">
+          <h2>Build for growth.</h2>
+          <div class="buttons">
+            <button type="button" class="active">NFTs</button>
+            <button type="button">DeFi</button>
+            <button type="button">Payments</button>
+            <button type="button">Gaming</button>
+            <button type="button">DAOs</button>
+          </div>
+        </div>
+        <div class="middleSection">
+          <div class="card">
+            <img
+              src="assets/images/buildForGrowthImage.svg"
+              alt="Man Cartoon Photo"
+            />
+            <div class="rightOfCard">
+              <img src="assets/images/anybodies.svg" alt="Anybodies" />
+              <p>
+                It’s time to bridge the digital and physical. Anybodies helps
+                established brands like Toys’R’Us connect real-life places and
+                products with NFTs.
+              </p>
+              <a href="#">Learn more about NFTs on Solana</a>
+            </div>
+          </div>
+        </div>
+        <div class="bottomSection">
+          <img src="assets/images/logo1.svg" alt="Logo" />
+          <img src="assets/images/logo2.svg" alt="Logo" />
+          <img src="assets/images/logo3.svg" alt="Logo" />
+          <img src="assets/images/logo4.svg" alt="Logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- JOIN THRIVING COMMUNITY SECTION ----- -->
+    <section class="joinThrivingCommunitySection">
+      <!-- <img
+        src="./assets/images/joinCommunity.svg"
+        alt="Background Image"
+        class="bgImage"
+      /> -->
+      <div class="container">
+        <h2>Join a thriving community.</h2>
+        <p>
+          It's time to join the thousands of creators, artists, and developers
+          using Solana.
+        </p>
+        <button type="button">START BUILDING</button>
+      </div>
+    </section>
+
+    <!-- ----- FOOTER ----- -->
+    <footer>
+      <div class="container">
+        <div class="leftSection">
+          <img src="assets/images/solanaLogoS.svg" alt="Solana S Logo" />
+          <h3>Managed by Solana Foundation</h3>
+          <div class="socialMediaIcons">
+            <img src="assets/images/socialMedia1.svg" alt="Social Media Icon" />
+            <img src="assets/images/socialMedia2.svg" alt="Social Media Icon" />
+            <img src="assets/images/socialMedia3.svg" alt="Social Media Icon" />
+            <img src="assets/images/socialMedia4.svg" alt="Social Media Icon" />
+            <img src="assets/images/socialMedia5.svg" alt="Social Media Icon" />
+            <img src="assets/images/socialMedia6.svg" alt="Social Media Icon" />
+          </div>
+          <p>© 2023 Solana Foundation. All rights reserved.</p>
+        </div>
+        <div class="rightSection">
+          <div class="solana">
+            <h6>SOLANA</h6>
+            <ul>
+              <li>Grants</li>
+              <li>Break Solana</li>
+              <li>Media Kit</li>
+              <li>Careers</li>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+          <div class="getConnected">
+            <h6>GET CONNECTED</h6>
+            <ul>
+              <li>Ecosystem</li>
+              <li>Blog</li>
+              <li>Newsletter</li>
+            </ul>
+          </div>
+          <div class="globus">
+            <img src="assets/images/globus.svg" alt="Globus" />
+            <p>EN</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
