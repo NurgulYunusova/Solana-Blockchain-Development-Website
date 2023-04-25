@@ -5,31 +5,30 @@ body {
     width: 100%;
     font-family: $base-font;
     position: relative;
-    height: 400px;
 
     img {
       position: absolute;
-      top: -100px;
+      top: -50px;
       z-index: -1;
     }
 
     .bgImg1 {
       left: 0;
-      width: 33%;
     }
 
     .bgImg2 {
       right: 0;
-      width: 30%;
     }
 
     .container {
       width: 60%;
-      margin: 100px auto;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 70vh;
+      padding-top: 150px;
 
       h1 {
         font-weight: 400;

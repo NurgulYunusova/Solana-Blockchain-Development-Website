@@ -1,19 +1,20 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     header {
+      .blueSection .container p {
+        font-size: 14px;
+      }
+
       .container {
+        padding: 15px 0;
         width: 80%;
 
         .leftSection {
           img {
-            width: 150px;
+            width: 120px;
           }
         }
         .rightSection {
-          // .menuButton {
-          //   display: inline-block;
-          // }
-
           nav ul li a {
             font-size: 14px;
           }
@@ -22,9 +23,16 @@
     }
 
     .mainPageSection {
+      img {
+        top: -100px;
+      }
+
+      .bgImg1 {
+        display: none;
+      }
+
       .container {
         width: 80%;
-        margin: 70px auto;
 
         h1 {
           font-size: 48px;
@@ -32,14 +40,16 @@
 
         p {
           font-size: 18px;
-          padding: 0 50px;
+          padding: 0;
         }
       }
     }
 
     .companiesSection {
+      width: 80%;
+
       .container {
-        width: 80%;
+        width: 100%;
 
         ul {
           width: 100%;
@@ -59,7 +69,6 @@
 
         .leftSection h3 {
           font-size: 32px;
-          width: 75%;
         }
 
         .rightSection {
@@ -92,30 +101,47 @@
     .massAdoptionSection {
       .container {
         width: 80%;
-        padding: 40px 0;
         flex-direction: column;
+        padding: 0;
 
         .leftSection {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-top: 30px;
 
           h3 {
             font-size: 30px;
+            text-align: center;
           }
         }
 
         .rightSection {
           gap: 50px;
           flex-direction: column;
+          align-items: center;
 
           .firstTwoCard {
-            margin-top: 80px;
+            margin-top: 50px;
           }
 
           .twoCards {
             flex-direction: row;
+
+            .card {
+              .cardFirstHeading {
+                font-size: 24px;
+              }
+
+              p {
+                font-size: 14px;
+              }
+
+              .number {
+                font-size: 24px;
+              }
+            }
           }
         }
       }
@@ -124,6 +150,14 @@
     .buildForGrowthSection {
       .container {
         width: 80%;
+
+        .middleSection {
+          .card {
+            img {
+              width: 200px;
+            }
+          }
+        }
 
         .topSection {
           margin: 20px 0;

@@ -2,34 +2,53 @@ header {
   width: 100%;
   font-family: $base-font;
   background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-  .container {
-    margin: 0 auto;
-    width: 70%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .blueSection {
+    width: 100%;
+    font-family: $base-font;
+    background: linear-gradient(
+      260.33deg,
+      $linear-gradient1 -13.37%,
+      $linear-gradient2 109.53%
+    );
 
-    .rightSection {
-      // .menuButton {
-      //   display: none;
-      //   background-color: #1abc9c;
-      //   padding: 0.8rem;
-      //   border: 0;
-      //   color: #fff;
-      //   font-family: "Montserrat", sans-serif;
-      //   font-size: 12.8px;
-      //   border-radius: 8px;
-      // }
+    .container {
+      margin: 0 auto;
+      width: 80%;
+      padding: 8px 0;
 
-      nav ul {
-        display: flex;
-        align-items: center;
-        gap: 30px;
+      p {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+      }
+    }
+  }
 
-        li a {
-          color: $grey-color;
+  .header {
+    .container {
+      margin: 0 auto;
+      width: 70%;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .rightSection {
+        nav ul {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+
+          li a {
+            color: $grey-color;
+          }
         }
       }
     }
