@@ -31,6 +31,21 @@ header .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+header .header .container .menuContainer {
+  background-color: rgba(85, 79, 79, 0.6);
+  padding: 13px;
+  border: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  border-radius: 8px;
+  display: none;
+}
+header .header .container .menuContainer svg {
+  height: 0.8rem;
+  vertical-align: -0.125em;
 }
 header .header .container .rightSection nav ul {
   display: flex;
@@ -351,8 +366,15 @@ body .mainPageSection .container .buttons .readDocsBtn {
   border: 1px solid #a962ff;
   border-radius: 15px;
 }
+.buildForGrowthSection .container .middleSection {
+  width: 100%;
+}
 .buildForGrowthSection .container .middleSection .card {
   display: flex;
+  width: 100%;
+}
+.buildForGrowthSection .container .middleSection .card .manCartoonPhoto {
+  width: 50%;
 }
 .buildForGrowthSection .container .middleSection .card .rightOfCard {
   background: #1a1a1a;
@@ -362,9 +384,6 @@ body .mainPageSection .container .buttons .readDocsBtn {
   flex-direction: column;
   justify-content: center;
   padding: 0 50px;
-}
-.buildForGrowthSection .container .middleSection .card .rightOfCard img {
-  width: 40%;
 }
 .buildForGrowthSection .container .middleSection .card .rightOfCard p {
   font-weight: 400;
@@ -381,6 +400,7 @@ body .mainPageSection .container .buttons .readDocsBtn {
 }
 .buildForGrowthSection .container .bottomSection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px 0;
   padding: 10px 0;
@@ -498,8 +518,6 @@ body .mainPageSection .container .buttons .readDocsBtn {
 }
 .joinThrivingCommunitySection .communityText button {
   margin-top: 30px;
-}
-.joinThrivingCommunitySection button {
   background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
   border: 1px solid #000;
   border-radius: 36px;
@@ -536,6 +554,7 @@ footer .container .leftSection h3 {
 }
 footer .container .leftSection .socialMediaIcons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 15px 0 20px;
 }
@@ -587,14 +606,13 @@ footer .container .rightSection .globus p {
   body header .blueSection .container p {
     font-size: 14px;
   }
-  body header .container {
+  body header .header .container {
     padding: 15px 0;
-    width: 80%;
   }
-  body header .container .leftSection img {
+  body header .header .container .leftSection img {
     width: 120px;
   }
-  body header .container .rightSection nav ul li a {
+  body header .header .container .rightSection nav ul li a {
     font-size: 14px;
   }
   body .mainPageSection img {
@@ -687,13 +705,298 @@ footer .container .rightSection .globus p {
   body .buildForGrowthSection .container {
     width: 80%;
   }
-  body .buildForGrowthSection .container .middleSection .card img {
-    width: 200px;
+  body .buildForGrowthSection .container .middleSection .card .manCartoonPhoto {
+    max-width: 50%;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard img {
+    max-width: 50%;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard a {
+    font-size: 14px;
   }
   body .buildForGrowthSection .container .topSection {
     margin: 20px 0;
   }
   body .buildForGrowthSection .container .topSection h2 {
     font-size: 32px;
+  }
+  body .joinThrivingCommunitySection .communityHeading h2 {
+    font-size: 32px;
+  }
+  body .joinThrivingCommunitySection .communityHeading img {
+    left: 0;
+    max-width: 100%;
+  }
+  body .joinThrivingCommunitySection .imageSliders h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  body .joinThrivingCommunitySection .imageSliders h6 {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  body .joinThrivingCommunitySection .communityText h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  body footer .container {
+    width: 80%;
+    padding: 50px 0;
+    gap: 15px;
+  }
+  body footer .container .leftSection h3 {
+    font-size: 14px;
+  }
+  body footer .container .leftSection .socialMediaIcons {
+    gap: 7px;
+    margin-bottom: 5px;
+  }
+  body footer .container .leftSection p {
+    font-size: 14px;
+  }
+  body footer .container .rightSection {
+    gap: 25px;
+  }
+  body footer .container .rightSection div h6 {
+    font-size: 14px;
+  }
+  body footer .container .rightSection div ul {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body header .blueSection .container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body header .header .container {
+    padding: 10px 0;
+  }
+  body header .header .container .leftSection img {
+    height: 20px;
+  }
+  body header .header .container .rightSection {
+    display: none;
+  }
+  body header .header .container .menuContainer {
+    display: block;
+  }
+  body .mainPageSection img {
+    top: -100px;
+  }
+  body .mainPageSection .bgImg1 {
+    display: none;
+  }
+  body .mainPageSection .container {
+    width: 80%;
+    padding-top: 200px;
+  }
+  body .mainPageSection .container h1 {
+    font-size: 42px;
+  }
+  body .mainPageSection .container p {
+    font-size: 15px;
+    padding: 0;
+    line-height: 23px;
+    margin: 20px 0;
+  }
+  body .mainPageSection .container .buttons .startBuildingBtn,
+  body .mainPageSection .container .buttons .readDocsBtn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  body .joinThrivingCommunitySection .communityHeading h2 {
+    font-size: 32px;
+  }
+  body .joinThrivingCommunitySection .communityHeading img {
+    left: 0;
+    max-width: 100%;
+  }
+  body .companiesSection {
+    width: 80%;
+  }
+  body .companiesSection .container {
+    padding: 60px 0;
+  }
+  body .companiesSection .container ul {
+    gap: 20px;
+  }
+  body .joinCommunitySection .container {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  body .joinCommunitySection .container .leftSection h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+  body .joinCommunitySection .container .rightSection {
+    gap: 15px;
+  }
+  body .joinCommunitySection .container .rightSection .numbers p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+  body .joinCommunitySection .container .rightSection .num1 h2 {
+    font-size: 65px;
+    line-height: 90px;
+    text-align: center;
+  }
+  body .joinCommunitySection .container .rightSection .num2 h2 {
+    font-size: 65px;
+    line-height: 90px;
+    text-align: center;
+  }
+  body .joinCommunitySection .container .rightSection .num3 h2 {
+    font-size: 65px;
+    line-height: 90px;
+    text-align: center;
+  }
+  body .massAdoptionSection .container {
+    width: 80%;
+    flex-direction: column;
+    padding: 0;
+  }
+  body .massAdoptionSection .container .leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  body .massAdoptionSection .container .leftSection h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  body .massAdoptionSection .container .rightSection {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .massAdoptionSection .container .rightSection .firstTwoCard {
+    margin-top: 50px;
+  }
+  body .massAdoptionSection .container .rightSection .twoCards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  body .massAdoptionSection .container .rightSection .twoCards .card .cardFirstHeading {
+    font-size: 24px;
+  }
+  body .massAdoptionSection .container .rightSection .twoCards .card p {
+    font-size: 14px;
+  }
+  body .massAdoptionSection .container .rightSection .twoCards .card .number {
+    font-size: 24px;
+  }
+  body .buildForGrowthSection .container {
+    width: 80%;
+  }
+  body .buildForGrowthSection .container .topSection {
+    margin: 20px 0;
+  }
+  body .buildForGrowthSection .container .topSection h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  body .buildForGrowthSection .container .topSection .buttons {
+    gap: 10px;
+  }
+  body .buildForGrowthSection .container .topSection .buttons button {
+    font-size: 13px;
+    line-height: 27px;
+    padding: 4px 8px;
+  }
+  body .buildForGrowthSection .container .middleSection .card .manCartoonPhoto {
+    max-width: 50%;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard {
+    padding: 0 30px;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard img {
+    max-width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  body .buildForGrowthSection .container .middleSection .card .rightOfCard a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body .joinThrivingCommunitySection .communityHeading {
+    width: 80%;
+  }
+  body .joinThrivingCommunitySection .communityHeading h2 {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0 auto;
+  }
+  body .joinThrivingCommunitySection .communityHeading img {
+    left: 0;
+    max-width: 100%;
+  }
+  body .joinThrivingCommunitySection .imageSliders h4 {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  body .joinThrivingCommunitySection .imageSliders h6 {
+    font-size: 6px;
+    line-height: 10px;
+  }
+  body .joinThrivingCommunitySection .communityText {
+    width: 70%;
+    margin: 40px auto;
+  }
+  body .joinThrivingCommunitySection .communityText h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  body .joinThrivingCommunitySection .communityText button {
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+  body footer .container {
+    width: 80%;
+    padding: 50px 0;
+    gap: 15px;
+  }
+  body footer .container .leftSection h3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body footer .container .leftSection .socialMediaIcons {
+    gap: 7px;
+    margin: 10px 0;
+  }
+  body footer .container .leftSection .socialMediaIcons img {
+    margin: 5px 0;
+    height: 12px;
+  }
+  body footer .container .leftSection p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body footer .container .rightSection {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  body footer .container .rightSection div h6 {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 7px;
+  }
+  body footer .container .rightSection div ul {
+    gap: 0;
   }
 }/*# sourceMappingURL=main.css.map */

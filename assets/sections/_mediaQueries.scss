@@ -5,9 +5,8 @@
         font-size: 14px;
       }
 
-      .container {
+      .header .container {
         padding: 15px 0;
-        width: 80%;
 
         .leftSection {
           img {
@@ -153,8 +152,23 @@
 
         .middleSection {
           .card {
-            img {
-              width: 200px;
+            .manCartoonPhoto {
+              max-width: 50%;
+            }
+
+            .rightOfCard {
+              img {
+                max-width: 50%;
+              }
+
+              p {
+                font-size: 15px;
+                margin-bottom: 10px;
+              }
+
+              a {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -168,8 +182,411 @@
         }
       }
     }
+
+    .joinThrivingCommunitySection {
+      .communityHeading {
+        h2 {
+          font-size: 32px;
+        }
+
+        img {
+          left: 0;
+          max-width: 100%;
+        }
+      }
+
+      .imageSliders {
+        h4 {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        h6 {
+          font-size: 8px;
+          line-height: 10px;
+        }
+      }
+
+      .communityText {
+        h2 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    footer {
+      .container {
+        width: 80%;
+        padding: 50px 0;
+        gap: 15px;
+
+        .leftSection {
+          h3 {
+            font-size: 14px;
+          }
+
+          .socialMediaIcons {
+            gap: 7px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .rightSection {
+          gap: 25px;
+
+          div {
+            h6 {
+              font-size: 14px;
+            }
+
+            ul {
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    header {
+      .blueSection {
+        .container {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .header {
+        .container {
+          padding: 10px 0;
+
+          .leftSection img {
+            height: 20px;
+          }
+
+          .rightSection {
+            display: none;
+          }
+
+          .menuContainer {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .mainPageSection {
+      img {
+        top: -100px;
+      }
+
+      .bgImg1 {
+        display: none;
+      }
+
+      .container {
+        width: 80%;
+        padding-top: 200px;
+
+        h1 {
+          font-size: 42px;
+        }
+
+        p {
+          font-size: 15px;
+          padding: 0;
+          line-height: 23px;
+          margin: 20px 0;
+        }
+
+        .buttons {
+          .startBuildingBtn,
+          .readDocsBtn {
+            font-size: 12px;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+
+    .joinThrivingCommunitySection {
+      .communityHeading {
+        h2 {
+          font-size: 32px;
+        }
+
+        img {
+          left: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .companiesSection {
+      width: 80%;
+
+      .container {
+        padding: 60px 0;
+
+        ul {
+          gap: 20px;
+        }
+      }
+    }
+
+    .joinCommunitySection {
+      .container {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        .leftSection h3 {
+          font-size: 32px;
+          text-align: center;
+        }
+
+        .rightSection {
+          gap: 15px;
+
+          .numbers {
+            p {
+              font-size: 15px;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
+
+          .num1 {
+            h2 {
+              font-size: 65px;
+              line-height: 90px;
+              text-align: center;
+            }
+          }
+
+          .num2 {
+            h2 {
+              font-size: 65px;
+              line-height: 90px;
+              text-align: center;
+            }
+          }
+
+          .num3 {
+            h2 {
+              font-size: 65px;
+              line-height: 90px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .massAdoptionSection {
+      .container {
+        width: 80%;
+        flex-direction: column;
+        padding: 0;
+
+        .leftSection {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+
+          h3 {
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+
+        .rightSection {
+          gap: 30px;
+          flex-direction: column;
+          align-items: center;
+
+          .firstTwoCard {
+            margin-top: 50px;
+          }
+
+          .twoCards {
+            flex-direction: column;
+            gap: 30px;
+
+            .card {
+              .cardFirstHeading {
+                font-size: 24px;
+              }
+
+              p {
+                font-size: 14px;
+              }
+
+              .number {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .buildForGrowthSection {
+      .container {
+        width: 80%;
+
+        .topSection {
+          margin: 20px 0;
+
+          h2 {
+            font-size: 28px;
+            line-height: 40px;
+          }
+
+          .buttons {
+            gap: 10px;
+
+            button {
+              font-size: 13px;
+              line-height: 27px;
+              padding: 4px 8px;
+            }
+          }
+        }
+
+        .middleSection {
+          .card {
+            .manCartoonPhoto {
+              max-width: 50%;
+            }
+
+            .rightOfCard {
+              padding: 0 30px;
+
+              img {
+                max-width: 50%;
+                object-fit: cover;
+              }
+
+              p {
+                font-size: 12px;
+                line-height: 20px;
+                margin-bottom: 10px;
+              }
+
+              a {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .joinThrivingCommunitySection {
+      .communityHeading {
+        width: 80%;
+
+        h2 {
+          font-size: 28px;
+          line-height: 30px;
+          margin: 0 auto;
+        }
+
+        img {
+          left: 0;
+          max-width: 100%;
+        }
+      }
+
+      .imageSliders {
+        h4 {
+          font-size: 13px;
+          line-height: 25px;
+        }
+
+        h6 {
+          font-size: 6px;
+          line-height: 10px;
+        }
+      }
+
+      .communityText {
+        width: 70%;
+        margin: 40px auto;
+
+        h2 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        button {
+          font-size: 12px;
+          padding: 10px 20px;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    footer {
+      .container {
+        width: 80%;
+        padding: 50px 0;
+        gap: 15px;
+
+        .leftSection {
+          h3 {
+            font-size: 12px;
+            line-height: 20px;
+          }
+
+          .socialMediaIcons {
+            gap: 7px;
+            margin: 10px 0;
+
+            img {
+              margin: 5px 0;
+              height: 12px;
+            }
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .rightSection {
+          gap: 20px;
+          justify-content: space-between;
+
+          div {
+            h6 {
+              font-size: 12px;
+              line-height: 15px;
+              margin-bottom: 7px;
+            }
+
+            ul {
+              gap: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -45,8 +45,15 @@
     }
 
     .middleSection {
+      width: 100%;
+
       .card {
         display: flex;
+        width: 100%;
+
+        .manCartoonPhoto {
+          width: 50%;
+        }
 
         .rightOfCard {
           background: #1a1a1a;
@@ -56,10 +63,6 @@
           flex-direction: column;
           justify-content: center;
           padding: 0 50px;
-
-          img {
-            width: 40%;
-          }
 
           p {
             font-weight: 400;
@@ -81,6 +84,7 @@
 
     .bottomSection {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       margin: 20px 0;
       padding: 10px 0;

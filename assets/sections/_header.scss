@@ -39,6 +39,23 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+
+      .menuContainer {
+        svg {
+          height: 0.8rem;
+          vertical-align: -0.125em;
+        }
+
+        background-color: rgba(85, 79, 79, 0.6);
+        padding: 13px;
+        border: 0;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        border-radius: 8px;
+        display: none;
+      }
 
       .rightSection {
         nav ul {

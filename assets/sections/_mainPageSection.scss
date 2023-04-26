@@ -54,6 +54,7 @@ body {
 
         .startBuildingBtn {
           @include button();
+          border: 0;
         }
 
         .readDocsBtn {
